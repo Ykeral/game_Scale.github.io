@@ -134,7 +134,7 @@ function countdown() {
         div.style.textAlign = 'center';
         div.innerHTML = "<h1>Время вышло!</h1>";
         scales.append(div);
-        if (l1_try <= 2) {
+        if (l3_try <= 2) {
             setTimeout(function () {
                 document.location.href = 'level_3.html'
             }, (3000));
