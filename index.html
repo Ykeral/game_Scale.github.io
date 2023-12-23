@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Игра: уравновесь меня</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h2 id="game_name"> Игра: Уравновесь меня</h2>
+            <div class="rules">
+                Необходимо уравновесить 2 чаши весов с помощью цифр. <br>
+                Каждая цифра имеет соответствующий вес, <br> а на чашах должно быть не менее 2 цифр. <br>
+                Осторожно: время игры ограничено!
+            </div>
+            <div class="authorization">
+                <form id="formUserName" onsubmit="return false;" method="POST" required>
+                    <label>
+                        <input type="text" name="user_name" id="user_name" placeholder="Введите имя игрока">
+                    </label>
+                </form>
+                <button class="button" type="submit" id="start">Старт</button>
+            </div>
+            <div class="rating">
+                <button class="button" id="rating">Рейтинг</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/action.js"></script>
+</body>
+
+</html>
