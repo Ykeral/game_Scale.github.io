@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    background: repeating-linear-gradient(45deg,
+            #dfe89b,
+            #98ab42 10%,
+            #dfe89b 10%,
+            #98ab42 20%);
+    background-size: 100px 100px;
+    animation: move-it 4s linear infinite;
+}
+
+@keyframes move-it {
+    0% {
+        background-position: initial;
+        /*При помощи свойства background-position можно управлять положением фоновой картинки внутри элемента. Устанавливает значение свойства в значение по умолчанию.*/
+    }
+
+    100% {
+        background-position: 100px 0px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    height: 60%;
+    width: 40%;
+    background-color: rgb(227, 236, 157);
+    border-radius: 10px;
+    border: 5px solid rgb(200, 180, 102);
+}
+
+#game_name {
+    text-align: center;
+    color: rgb(55, 43, 25);
+}
+
+.rules {
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;   
+    margin-top: 5%;
+    line-height: 20px;
+}
+
+.authorization {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #000000;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    background-color: #ffffff;
+}
+
+input:focus {
+    border-color: #FF8630;
+    outline: none;
+}
+
+input,
+.button {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.button {
+    display: block;
+    min-width: 210px;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin-top: 25px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: inherit;
+    transition: background-color 0.2s linear;
+    background-color: #e47c0c;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+#rating, #main {
+    margin-inline: auto;
+}
+
+#name, #sum, #lvl1, #lvl2, #lvl3 {
+    text-align: center;
+}

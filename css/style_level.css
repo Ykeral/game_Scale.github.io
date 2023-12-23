@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: rgb(230, 215, 103);
+    width: 100%;
+    height: 15%;
+    
+}
+
+.header_text {
+    text-align: center;
+    color: rgb(55, 43, 25);
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 1%;
+}
+.body {
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+}
+
+.scales {
+    background-color: rgb(237, 243, 171);
+    flex: 3;
+}
+
+.numbers {
+    background-color: rgb(242, 242, 187);
+    flex: 1;
+    overflow: hidden;
+    height: 85vh;
+}
+
+.button {
+    display: block;
+    min-width: 210px;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin-top: 25px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: inherit;
+    transition: background-color 0.2s linear;
+    background-color: #e47c0c;
+    position: relative;
+    top: 85%;
+    left: 80%;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.slide {
+    margin-top: 100%;
+    transition: margin-top 4s;
+}
+
+.selected {
+    opacity: 0.6;
+  }
+
+.sumLeft, .sumRight {
+    position: relative;
+}
+
+.sumLeft {
+    /*top: 65%;
+    left: 20%;
+    z-index: 1000;*/
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sumRight {
+   /* top: 61%;
+    left: 45%;
+    z-index: 1000;*/
+    font-weight: bold;
+    font-size: 25px;
+}
